@@ -5,7 +5,12 @@
 $aStreams = [];
 if (isset($_GET["streams"])) {
 
-	$aStreams = explode("/", $_GET["streams"]);
+	foreach (explode("/", $_GET["streams"]) AS $sGetStreamname) {
+		$sGetStreamname = trim($sGetStreamname);
+		if ($sGetStreamname != "") {
+			array_push($aStreams, $sGetStreamname);
+		}
+	}
 }
 
 
