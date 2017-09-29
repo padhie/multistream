@@ -1,0 +1,7 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteRule ^stream/(.*)$ 					controller/stream.php?streams=$1					[QSA,L]
+</IfModule>
