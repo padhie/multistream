@@ -5,6 +5,10 @@
 		body {
 			background-color: #000000;
 		}
+		.chat_embed {
+			height: 100%;
+			width: 100%;
+		}
 		.left {
 			float: left;
 		}
@@ -26,9 +30,11 @@
 			height: 100%;
 			float: left;
 		}
-		.chat_embed {
-			height: 100%;
-			width: 100%;
+		.oneStream .streamVideo {
+			width: 80% !important;
+		}
+		.oneStream .streamChat {
+			width: 20% !important;
 		}
 	</style>
 </head>
